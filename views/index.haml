@@ -1,0 +1,53 @@
+%h1.center Station Five
+
+%span#score.hide 0
+%span#timer 0
+%h2#welcome.hide
+  Welcome
+  %span#name Guest
+
+
+-# Intro
+.section#section-0
+  #landing.center
+    %p Hi. Welcome to Station Five! Let's get started, what is your name?
+    .input
+      %input#username{:type => 'text', :placeholder => 'Coder Girl'}
+      %input#start-btn.button.transparent{:type => 'button', :value => 'Start', :disabled => 'disabled'}
+
+  .hide
+    %span Leaderboard
+
+
+-# Tag Identification
+.section#section-1.hide
+  = partial 'sections/section_1'
+
+
+-# Multiple Choice Questions
+.section#section-2.hide
+  = partial 'sections/section_2'
+
+
+-# Bingo
+.section#section-3.hide
+  = partial 'sections/section_3'
+
+
+.section#section-4.hide
+  = partial 'sections/section_4'
+
+
+-# Codeacademy Style
+.section#section-5.hide
+  = partial 'sections/section_5'
+
+
+-# Hex
+.section#section-6.hide
+  = partial 'sections/section_6'
+
+
+-# Feedback
+.section#section-7.hide
+  = partial 'sections/section_7'

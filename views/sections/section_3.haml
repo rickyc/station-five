@@ -1,0 +1,20 @@
+- responses = BINGO[:responses].shuffle
+
+.title Bingo
+.desc 
+.content
+  .hide
+    %select
+      - BINGO[:all].shuffle.each do |hsh|
+        %option{:value => "#{h hsh['response']}"}= h hsh['prompt']
+
+  .announcer
+    %h2#prompt
+    %a#next Next Prompt
+
+  .board
+  %table
+    - (1..5).each do |i|
+      %tr
+        - (1..5).each do |j|
+          %td= h responses[i*5+j]

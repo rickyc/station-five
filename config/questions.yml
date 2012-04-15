@@ -1,0 +1,121 @@
+---
+questions: 
+  - question: How do you start and end a web page?
+    answers: 
+      - <marquee></marquee>
+      - <head></head>
+      - <html></html>
+      - <html><html>
+    solution: c
+
+  - question: What is the attribute used to change the font and its appearance?
+    answers:
+      - font
+      - size
+      - color
+      - style
+    solution: d
+
+  - question: Which of these are properties of the style attribute?
+    answers:
+      - font-family
+      - color
+      - background-image
+      - all of the above
+    solution: d
+
+  - question: What does <strong style='color:yellow'>moo</strong> do?
+    answers:
+      - It makes the sound, moooooo
+      - It makes the the word moo bold
+      - It makes the word moo yellow
+      - It does everything except A
+    solution: d
+
+  - question: Which one of these hex codes are valid?
+    answers:
+      - '#GHA000'
+      - '#FFFFF'
+      - '#000000'
+      - '#1111111'
+    solution: c
+
+  - question: What color does hex code #facade produce?
+    answers:
+      - black
+      - transparent
+      - pink
+      - it isn't a hex
+    solution: c
+
+  - question: Which one of these makes the statement valid "style='color:________'"?
+    answers:
+      - '#000'
+      - '#SHIRMUNG'
+      - pappayawhip
+      - olvedrab
+    solution: a
+
+  - question: Which of these is not an image tag attribute?
+    answers:
+      - width
+      - style
+      - height
+      - href
+    solution: d
+
+  - question: How would you change the font of the text?
+    answers: 
+      - <p style='font:serif'>Hello</p>
+      - <span style='font-family:verdana'>How</span>
+      - <b style='font=arial'>are</b>
+      - <marquee style='font-family=helvetica'>you<marquee>
+    solution: b
+
+  - question: How do you add videos to your webpage?
+    answers:
+      - Go to youtube or vimeo and copy the embed text
+      - Type <embed src='link'></embed>
+      - Ask Shirmung how to do it
+      - Download the video and add it to the webpage like you would an image
+    solution: a
+
+  - question: Which one of these styles changes the width and the height of the image to 500px?
+    answers: 
+      - <img src='image.jpg' width='500' height='500'></img>
+      - <img src='image.jpg' style='width:500px; height:500px'/>
+      - Both A + B
+      - None of the above
+    solution: c
+
+  - question: What does this do? <b style='font-size:20px'><i style='font-family:arial'><center style='color:seagreen'>education</center></i></b>?
+    answers:
+      - It doesn't do anything since it's invalid html code.
+      - It makes the text bold, italicized and centered and only changes the text color to seagreen
+      - It makes the word education bold, centered, italicized, with a font size of 20px, font family of arial and the color sea green
+      - I give up
+    solution: c
+
+  - question: How do you change the size of the text?
+    answers:
+      - Use headers
+      - Use the big and small tag
+      - Use style font-size
+      - All of the above
+    solution: d
+
+  - question: What does <p style='prettify:text'>makes this text pretty</p> do?
+    answers:
+      - It turns the text into cursive
+      - It makes the text flash different colors
+      - It animates the text by making it blink
+      - It doesn't do anything
+    solution: d
+
+  - question: What does <div style='padding:50px'>Cool</div> do?
+    answers:
+      - The property doesn't exist
+      - Appends additional text to the word cool
+      - It pads the word cool with white space on all sides by 50 pixels
+      - It stretches the word cool by 50px
+    solution: c

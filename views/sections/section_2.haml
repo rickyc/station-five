@@ -1,0 +1,12 @@
+.title QA!
+.content
+  %ul
+    - questions = QUESTIONS.shuffle[0..4]
+    - questions.each do |q|
+      - idx = questions.index(q)
+      %li.question{:id => "question-#{idx}"}
+        %p= h "#{idx+1}) #{q['question']}"
+        %ul
+          - q['answers'].each do |a|
+            %li= h a
+        %input{:type => 'hidden', :value => q['solution']}

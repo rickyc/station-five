@@ -1,0 +1,59 @@
+.title Ugh, more questions.
+.content
+  %ol
+    %li#prompt-1
+      .prompt Underline the following sentence and make it red.
+      .blurb Shirmung loves to knit.
+      .response
+        %textarea.interpret
+      %input.next.button.transparent{:type => 'button', :value => 'Next', :disabled => 'disabled'}
+      %input.hint.button.transparent{:type => 'button', :value => 'Hint'}
+      .eval &nbsp;
+      -#.solution= h "<u style='color:red'>Shirmung loves to knit.</u>"
+
+    %li#prompt-2.hide
+      .prompt Write the html code for an image tag, given that the url is ...
+      .blurb http://codeed.heroku.com/sheep.jpg
+      .response
+        %textarea.interpret
+      %input.next.button.transparent{:type => 'button', :value => 'Next', :disabled => 'disabled'}
+      %input.hint.button.transparent{:type => 'button', :value => 'Hint'}
+      .eval &nbsp;
+
+    %li#prompt-3.hide
+      .prompt Write a tag that would make a font larger than the one below?
+      .blurb
+        %span#squirrel-text{:style => 'font-size: 40px'} Squirrel!!!
+      .response
+        %textarea.interpret
+      %input.next.button.transparent{:type => 'button', :value => 'Next', :disabled => 'disabled'}
+      %input.hint.button.transparent{:type => 'button', :value => 'Hint'}
+      .eval
+
+    %li#prompt-4.hide
+      .prompt What are some websites that you can get videos from?
+      .blurb
+      .response
+        %textarea
+      %input.next.button.transparent{:type => 'button', :value => 'Next', :disabled => 'disabled'}
+      %input.hint.button.transparent{:type => 'button', :value => 'Hint'}
+      -#.solution check for youtube, vimeo, cnn, google, search engine
+
+    %li#prompt-5.hide
+      .prompt Make this text bold italic underline and marquee it!
+      .blurb Why is a raven like a writing desk?
+      .response
+        %textarea.interpret
+      %input.next.button.transparent{:type => 'button', :value => 'Next', :disabled => 'disabled'}
+      %input.hint.button.transparent{:type => 'button', :value => 'Hint'}
+      .eval
+      -#.solution= h "ask shirmung (<b><i><u><marquee>Why is a raven like a writing desk?</marquee></u></i></b>)"
+
+    %li#prompt-6.hide
+      .prompt Add a background color to this.
+      .blurb I love programming!
+      .response
+        %textarea.interpret
+      %input.next.button.transparent{:type => 'button', :value => 'Next', :disabled => 'disabled'}
+      %input.hint.button.transparent{:type => 'button', :value => 'Hint'}
+      .eval

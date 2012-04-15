@@ -1,0 +1,78 @@
+---
+bingo:
+  - prompt: What is the brain of a computer?
+    response: CPU
+  - prompt: Firefox, Opera, Chrome, Safari and Explorer are types of what?
+    response: Browsers
+  - prompt: What does www stand for?
+    response: World wide web
+  - prompt: There are how many days in a week?
+    response: Seven
+  - prompt: FTP is known as what?
+    response: File transfer protocol
+  - prompt: How many KB is equal to one MB?
+    response: 1024
+  - prompt: This is a programming language
+    response: HTML
+  - prompt: Search Engine
+    response: Google
+  - prompt: The department that troubleshoots computer problems
+    response: IT
+  - prompt: '<b>'
+    response: Bold
+  - prompt: '<textarea>'
+    response: Text Box
+  - prompt: Citation
+    response: '<cite>'
+  - prompt: Unordered List
+    response: '<ul>'
+  - prompt: Short hand way of writing hr tag
+    response: '<hr/>'
+  - prompt: Starting Salary for Developers
+    response: $45k-$80k
+  - prompt: Average Salary for Senior Developers
+    response: $100k-120k
+  - prompt: Table Row
+    response: '<tr>'
+  - prompt: Table Column
+    response: '<td>'
+  - prompt: CSS
+    response: Cascading Style Sheets
+  - prompt: SCP?
+    response: Secure Copy
+  - prompt: Text scrolls across the screen
+    response: Marquee
+  - prompt: Hex Value
+    response: '#BADDAD'
+  - prompt: "<span style='_________'>RED!</span>"
+    response: color:red
+  - prompt: Blue Planet
+    response: Earth
+  - prompt: First President
+    response: George Washington
+  - prompt: President on the $5
+    response: Lincoln
+  - prompt: Number of stars on the flag
+    response: 50
+  - prompt: Number of stripes on the flag
+    response: 13
+  - prompt: Facebook, Twitter, Google+ are forms of what?
+    response: Social Networks
+  - prompt: Mail is to Email, as Book is to ______
+    response: EBooks
+  - prompt: On Windows Machines the Hard Drive was generally assigned which letter?
+    response: 'C:\'
+  - prompt: Floppy Drives were assigned what letter on Windows
+    response: 'A:\'
+  - prompt: External drives were assigned what letters on Windows
+    response: 'D:\ -> Z:\'
+  - prompt: Software Development Kit
+    response: SDK
+  - prompt: Image
+    response: '<img/>'
+  - prompt: PI
+    response: 3.14159265
+  - prompt: Apple uses what to represent their OS
+    response: Cats
+  - prompt: What is a virus?
+    response: A computer program

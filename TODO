@@ -1,0 +1,6 @@
+RFCT
+---
+Clean up QA view section
+YML Section 1 HAML
+Move questions initializer into lib/initialize
+Move the assets into the root directory

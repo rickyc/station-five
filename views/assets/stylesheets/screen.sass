@@ -1,0 +1,159 @@
+=border-radius($radius)
+  border-radius: $radius
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+  border: 2px solid #decee7
+
+=center
+  text-align: center
+
+*
+  font-family: 'Molengo', sans-serif
+  &:focus 
+    outline: none
+
+body
+  margin: 40px
+
+h1
+  font-size: 3em
+  color: #896088
+
+h2
+  color: #444
+
+p
+  font-size: 1.1em
+  color: #4b415c
+
+input
+  width: 180px 
+  padding: 10px
+  margin-left: 5px
+  font-size: 0.9em
+  +border-radius(30px)
+  +center
+
+.transparent
+  opacity: 0.3
+
+.title
+  margin-bottom: 10px
+
+.tiny
+  font-size: 0.5em
+
+.button
+  background-color: #decee7
+  color: #814d9c
+  font-weight: bold
+  text-transform: uppercase
+    
+#timer
+  position: absolute
+  right: 20px 
+  top: 10px
+
+.center
+  +center
+
+.hide
+  display: none
+
+.section
+  margin-top: 15px
+
+  .title
+    font-weight: bold
+
+  .content
+    padding: 5px
+
+
+
+// Section 1 - Identifying Tags
+#section-1
+  #bounding-box
+    width: 900px
+    height: 500px
+    position: relative
+
+  .tag
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #caeaff
+    color: #e81843
+    padding: 5px
+    cursor: pointer
+    z-index: 999
+
+  .descriptor
+    position: absolute
+    top: 0
+    left: 0
+    cursor: pointer
+    padding: 5px
+    background-color: #ffd8b4
+    width: 150px
+    text-align: center
+  
+  .success
+    background-color: #caf4ac
+
+
+// Section 2 - Multiple Choice Questions
+#section-2
+  li.question
+    list-style: none
+
+    p
+      font-weight: bold
+
+  li.error
+    color: red
+
+
+// Section 3 - Bingo
+#section-3
+  td
+    padding: 35px
+    text-align: center
+    
+    &.highlighted
+      background-color: #facade
+
+
+// Section 5 - Codeacademy
+#section-5
+
+  textarea
+    width: 500px
+    height: 100px
+    font-size: 1.5em
+  
+  .prompt
+    font-weight: bold
+    font-size: 1.1em
+
+  .blurb
+    font-style: italic
+
+// Section 6 - HEX
+#section-6
+  ul#palette
+    margin: 20px 0
+    padding: 0px
+
+    li.swatch
+      margin: 5px
+      width:  75px
+      height: 75px
+      border: thin black solid
+      list-style: none
+      display: inline-block
+
+#section-7
+  #comments
+    width: 300px
+    height: 200px
