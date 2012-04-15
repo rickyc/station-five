@@ -14,14 +14,15 @@ window.DEBUG = true
 # Rename
 class Player
   
-  @score = 99999
+  @score = 45678
   @timer = 0
+  @scheduler = null
 
   # Initializer
   constructor: -> @run()
 
   run: ->
-    setInterval(@updateTimer, 100)
+    Player.scheduler = setInterval(@updateTimer, 100)
 
   updateTimer: ->
     CSEngine.updateClock ++Player.timer
@@ -256,6 +257,16 @@ window.CSEngine =
         $('#section-6 #continue').removeAttr('disabled').animate opacity: 1
         $('#section-6 #continue').click ->
           $('#section-6').fadeOut 1000, -> $('#section-7').fadeIn()
+          CSEngine.player.updateScore(parseInt($('#timer').html()) * -1)
+          $('#section-7 .content .msg').html "Your final score is #{Player.score}!"
+          clearInterval(Player.scheduler)
+
+          # Submit Score
+          $.ajax
+            type: 'POST',
+            url: '/player',
+            data: "name="+encodeURI("#{$('#name').html()}")+"&score=#{Player.score}&time=#{$('#timer').html()}"
+
 
 
   updateClock: (time) ->
