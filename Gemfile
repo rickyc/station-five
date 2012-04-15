@@ -10,6 +10,8 @@ gem 'therubyracer'
 
 gem 'datamapper'
 
+gem 'dm-migrations'
+
 
 # Development / Testing
 group :development, :test do
