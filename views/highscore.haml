@@ -1,11 +1,14 @@
 %h1 Highscores
+
 %ul#highscore
   %li#header
     %span.player Name
     %span.score Score
     %span.time Time
+
+  - i = 1
   - @players.each do |player|
     %li
-      %span.player= player.name
+      %span.player= "#{i}) #{player.name}"
       %span.score= player.score
       %span.time= player.time

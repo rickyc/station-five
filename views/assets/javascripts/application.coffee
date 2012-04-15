@@ -256,6 +256,7 @@ window.CSEngine =
       if $('#palette .swatch:not([style])').length == 0
         $('#section-6 #continue').removeAttr('disabled').animate opacity: 1
         $('#section-6 #continue').click ->
+          $(this).attr('disabled', 'disabled')
           $('#section-6').fadeOut 1000, -> $('#section-7').fadeIn()
           CSEngine.player.updateScore(parseInt($('#timer').html()) * -1)
           $('#section-7 .content .msg').html "Your final score is #{Player.score}!"
