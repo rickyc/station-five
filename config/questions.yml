@@ -40,7 +40,7 @@ questions:
       - '#1111111'
     solution: c
 
-  - question: What color does hex code #facade produce?
+  - question: "What color does hex code #facade produce?"
     answers:
       - black
       - transparent
@@ -48,7 +48,7 @@ questions:
       - it isn't a hex
     solution: c
 
-  - question: Which one of these makes the statement valid "style='color:________'"?
+  - question: "Which one of these makes the statement valid \"style='color:________'\"?"
     answers:
       - '#000'
       - '#SHIRMUNG'

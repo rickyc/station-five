@@ -251,22 +251,23 @@ window.CSEngine =
       if color.match(/^#?[a-f|A-F|0-9]{6}$/)
         $('#palette .swatch:not([style]):first').css('background-color', "##{color}")
         $('#hex-color').val('')
-        CSEngine.player.updateScore(97)
 
-      if $('#palette .swatch:not([style])').length == 0
-        $('#section-6 #continue').removeAttr('disabled').animate opacity: 1
-        $('#section-6 #continue').click ->
-          $(this).attr('disabled', 'disabled')
-          $('#section-6').fadeOut 1000, -> $('#section-7').fadeIn()
-          CSEngine.player.updateScore(parseInt($('#timer').html()) * -1)
-          $('#section-7 .content .msg').html "Your final score is #{Player.score}!"
-          clearInterval(Player.scheduler)
-
-          # Submit Score
-          $.ajax
-            type: 'POST',
-            url: '/player',
-            data: "name="+encodeURI("#{$('#name').html()}")+"&score=#{Player.score}&time=#{$('#timer').html()}"
+        if $('#palette .swatch:not([style])').length == 0
+          $('#section-6 #continue').removeAttr('disabled').animate opacity: 1
+          $('#section-6 #continue').click ->
+            $(this).attr('disabled', 'disabled')
+            $('#section-6').fadeOut 1000, -> $('#section-7').fadeIn()
+            CSEngine.player.updateScore(parseInt($('#timer').html()) * -1)
+            $('#section-7 .content .msg').html "Your final score is #{Player.score}!"
+            clearInterval(Player.scheduler)
+  
+            # Submit Score
+            $.ajax
+              type: 'POST',
+              url: '/player',
+              data: "name="+encodeURI("#{$('#name').html()}")+"&score=#{Player.score}&time=#{$('#timer').html()}"
+        else
+          CSEngine.player.updateScore(97)
 
 
 
